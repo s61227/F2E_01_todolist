@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://use.fontawesome.com/771d69edc4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="tag">
+            <li><a href="#all" class="isactive">My Tasks</a></li>
+            <li><a href="#progress">In Progress</a></li>
+            <li><a href="#completed">Completed</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <main>
+            <section class="addBar">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <span>Add Task</span>
+            </section>
+            <ul class="addTask taskList ">
+                <li>
+                    <div>
+                        <label class="taskWrap">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="taskTitle">
+                            <input type="text" placeholder="Type Something Here...">
+                        </span>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <section>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i>Deadline</span><br>
+                            <input type="text" placeholder="yyyy/mm/dd">
+                            <input type="text" placeholder="hh:mm">
+                        </section>
+                        <section>
+                            <span><i class="fa fa-file-o" aria-hidden="true"></i>File</span><br>
+                            <button><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        </section>
+                        <section>
+                            <span><i class="fa fa-commenting-o" aria-hidden="true"></i>Comment</span><br>
+                            <textarea rows="5" cols="45" placeholder="Type your memo here..."></textarea>
+                        </section>
+                    </div>
+                    <div>
+                        <button class="cancelBtn">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <span>Cancel</span>
+                        </button>
+                        <button class="addBtn">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <span>Add Task</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="taskList">
+                <li class="topTask" data-tag="progress">
+                    <div>
+                        <label class="taskWrap">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="taskTitle">
+                            <input type="text" placeholder="Type Something Here...">
+                        </span>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>5/14</span>
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li class="topTask" data-tag="progress">
+                    <div>
+                        <label class="taskWrap">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="taskTitle">
+                            <input type="text" placeholder="Type Something Here...">
+                        </span>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>5/14</span>
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li data-tag="progress">
+                    <div>
+                        <label class="taskWrap">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="taskTitle">
+                            <input type="text" placeholder="Type Something Here...">
+                        </span>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>5/14</span>
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li class="comTask" data-tag="completed">
+                    <div>
+                        <label class="taskWrap">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="taskTitle">
+                            <input type="text" placeholder="Type Something Here...">
+                        </span>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>5/14</span>
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+            <span class="remainder">4 Task left</span>
+        </main>
+    </div>
+</body>
+</html>
+
+
